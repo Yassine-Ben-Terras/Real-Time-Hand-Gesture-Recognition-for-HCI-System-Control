@@ -3,8 +3,8 @@ import mediapipe as mp
 import csv
 import copy
 import itertools
-
-# --- CONFIGURATION ---
+    
+# --- CONFIGURATION --  -
 FILE_NAME = 'keypoints.csv'
 # 0 = Fist (Volume Mute), 1 = Thumbs Up (Volume Up), 2 = Open Palm (Volume Down)
 # You can add more later!
@@ -13,6 +13,7 @@ FILE_NAME = 'keypoints.csv'
 mp_hands = mp.solutions.hands
 mp_drawing = mp.solutions.drawing_utils
 mp_drawing_styles = mp.solutions.drawing_styles
+
 
 hands = mp_hands.Hands(
     static_image_mode=False,
